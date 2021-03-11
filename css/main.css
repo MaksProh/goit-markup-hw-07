@@ -1,0 +1,411 @@
+body {
+  font-family: Roboto, sans-serif;
+  margin: 0;
+}
+
+h1 {
+  text-align: center;
+  color: var(--white-text);
+  font-size: 44px;
+  line-height: 1.36;
+  font-weight: 900;
+}
+
+.work,
+.command,
+.clients-title {
+  font-weight: 700;
+  line-height: 1.16;
+  color: var(--black-text);
+  font-size: 36px;
+}
+
+/* КОНТЕЙНЕР ГЕРОЯ */
+
+.fon-hero {
+  width: 1600px;
+  padding: 200px 0;
+  margin: 0 auto;
+  background-image: url(../img/fonhero.jpg),
+    linear-gradient(
+      to left,
+      var(--background-hero-next) 40%,
+      var(--background-hero)
+    );
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: var(--background-hero);
+}
+
+.text-hero {
+  display: inline-block;
+  margin-bottom: 20px;
+  width: 696px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.container-hero {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+  text-align: center;
+}
+
+.hero-button {
+  display: block;
+  margin: 0 auto;
+  min-width: 200px;
+  min-height: 50px;
+  border-radius: 4px;
+  font-family: inherit;
+  background-color: var(--blu-text);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+  text-align: center;
+  padding: 10px 32px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  color: var(--white-text);
+}
+
+/* НАШИ ПРЕИМУЩЕСТВА */
+
+.container-advantages {
+  padding-top: 94px;
+}
+
+.list-advantages .advantages {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  margin-bottom: 10px;
+}
+
+.list-advantages .list-description {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  color: var(--grey-text);
+}
+
+.list-advantages {
+  padding: 0;
+  margin: 0;
+}
+
+.list-advantages {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+}
+
+.list-advantages .item {
+  display: block;
+  margin-left: 30px;
+  flex-basis: calc(100% / 4 - 30px);
+}
+
+.container-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 120px;
+  background-color: var(--background-advantages);
+  border-radius: 4px;
+  margin-bottom: 30px;
+}
+
+.icon-antenna {
+  width: 70px;
+  height: 70px;
+}
+
+/* ЧЕМ МЫ ЗАНИМАЕМСЯ */
+
+.container-work {
+  padding: 94px 0;
+}
+
+.work-img {
+  display: inline-flex;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+  margin-left: -30px;
+}
+
+.work-img .item {
+  margin-left: 30px;
+  width: calc(100% / 3 - 30px);
+}
+
+.work {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.thumb-work {
+  height: 294px;
+}
+
+.work-img .item {
+  position: relative;
+}
+
+.work-img .img {
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+}
+
+.descript {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding-top: 27px;
+  padding-bottom: 27px;
+  text-align: center;
+  background-color: var(--background-descript);
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  color: var(--white-text);
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+/* НАША КОМАНДА */
+
+.title-command {
+  margin: 0;
+  padding: 0;
+}
+
+.thumb-command {
+  height: 260px;
+}
+
+.title-command img {
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+}
+
+.title-command .initials {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  color: var(--black-text);
+}
+
+.title-command .profession {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.19;
+  color: var(--grey-text);
+  margin-bottom: 16px;
+}
+
+.command {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.fon-command {
+  padding: 94px 0px;
+  background-color: var(--background-btn);
+}
+
+.title-command {
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+}
+
+.title-command .item {
+  width: calc(100% / 4 - 30px);
+  margin-left: 30px;
+  text-align: center;
+
+  background: var(--white-text);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.initials {
+  margin-bottom: 10px;
+}
+
+.command-common {
+  padding: 30px 32px;
+}
+
+/* ИКОНКИ СОЦ.СЕТЕЙ В КАРТОЧКАХ КОМАНДЫ */
+
+.social-list {
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.icon-link {
+  width: 20px;
+  height: 20px;
+  fill: var(--color-link);
+
+  transition: fill 250ms var(--timing-function);
+}
+
+.social-link {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+}
+
+.item-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+  color: var(--white-text);
+  background-color: var(--white-text);
+
+  transition: background-color 250ms var(--timing-function);
+}
+
+.item-link:hover,
+.item-link:focus {
+  background-color: var(--blu-text);
+}
+
+.item-link:hover .icon-link,
+.item-link:focus .icon-link {
+  fill: currentColor;
+}
+
+/* ПОСТОЯННЫT КЛИЕНТЫ */
+
+.container-clients {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.clients-title {
+  margin-bottom: 50px;
+}
+
+.clients {
+  padding: 94px auto;
+  margin: 0 auto;
+}
+
+.clients-title {
+  text-align: center;
+}
+
+.clients-list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+}
+
+.clients-item {
+  height: 90px;
+  flex-basis: calc(100% / 6 - 30px);
+  margin-left: 30px;
+}
+
+.clients-link:hover,
+.clients-link:focus {
+  border: 1px solid var(--blu-text);
+  color: var(--blu-text);
+}
+
+.clients-link {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid var(--color-link);
+
+  transition: border 250ms var(--timing-function),
+    color 250ms var(--timing-function);
+}
+
+.icon-yaco {
+  width: 44.27px;
+  height: 49.23px;
+  fill: var(--color-link);
+
+  transition: fill 250ms var(--timing-function);
+}
+
+.icon-tagline {
+  width: 40px;
+  height: 52px;
+  fill: var(--color-link);
+
+  transition: fill 250ms var(--timing-function);
+}
+
+.icon-company {
+  width: 41px;
+  height: 42.6px;
+  fill: var(--color-link);
+
+  transition: fill 250ms var(--timing-function);
+}
+
+.icon-brand {
+  width: 59px;
+  height: 47px;
+  fill: var(--color-link);
+
+  transition: fill 250ms var(--timing-function);
+}
+
+.icon-foster {
+  width: 79.66px;
+  height: 42.02px;
+  fill: var(--color-link);
+
+  transition: fill 250ms var(--timing-function);
+}
+
+.icon-ctl {
+  width: 88.48px;
+  height: 45.44px;
+  fill: var(--color-link);
+
+  transition: fill 250ms var(--timing-function);
+}
+
+.clients-link:hover .icon-yaco,
+.clients-link:hover .icon-tagline,
+.clients-link:hover .icon-company,
+.clients-link:hover .icon-ctl,
+.clients-link:hover .icon-foster,
+.clients-link:hover .icon-brand {
+  fill: currentColor;
+}
+
+.clients-link:focus .icon-yaco,
+.clients-link:focus .icon-tagline,
+.clients-link:focus .icon-company,
+.clients-link:focus .icon-ctl,
+.clients-link:focus .icon-foster,
+.clients-link:focus .icon-brand {
+  fill: currentColor;
+}

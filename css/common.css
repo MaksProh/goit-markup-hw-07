@@ -1,0 +1,402 @@
+:root {
+  --white-text: #ffffff;
+  --grey-text: #757575;
+  --black-text: #212121;
+  --blu-text: #2196f3;
+  --grey-fone: #2f303a;
+  --white-transparent-text: rgba(255, 255, 255, 0.6);
+  --bold-black: #000000;
+  --background-btn: #f5f4fa;
+  --background-descript: rgba(47, 48, 58, 0.8);
+  --background-hero-next: #c4c4c4;
+  --background-hero: rgba(47, 48, 58, 0.4);
+  --background-advantages: #f5f4fa;
+  --color-link: #afb1b8;
+  --backgrouund-links-footer: rgba(255, 255, 255, 0.1);
+  --color-border-portfolio: #eeeeee;
+  --border-close: rgba(0, 0, 0, 0.1);
+  --background-modal: rgba(0, 0, 0, 0.2);
+  --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  --background-project: rgba(33, 150, 243, 0.9);
+  --border-nav-portfolio: #ececec;
+}
+
+address {
+  font: inherit;
+}
+
+.nav .link {
+  display: inline-block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  font-weight: 500;
+  color: var(--black-text);
+  font-size: 14px;
+  line-height: 1.14;
+
+  transition: color 250ms var(--timing-function);
+}
+
+.link-first {
+  display: inline-block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  color: var(--blu-text);
+  text-decoration: none;
+}
+
+.nav .link:hover,
+.nav .link:focus {
+  color: var(--blu-text);
+}
+
+.webstudio-nav,
+.webstudio-footer {
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  color: var(--bold-black);
+}
+
+.web {
+  color: var(--blu-text);
+}
+
+.studio {
+  color: var(--white-text);
+}
+
+.addres {
+  color: var(--white-text);
+  font-size: 14px;
+  line-height: 1.71;
+
+  transition: color 250ms var(--timing-function);
+}
+
+.contacts-nav .mail:hover,
+.contacts-nav .mail:focus,
+.contacts-footer .mail:hover,
+.contacts-footer .mail:focus {
+  color: var(--blu-text);
+}
+
+.contacts-nav .pfone:hover,
+.contacts-nav .pfone:focus,
+.contacts-footer .pfone:hover,
+.contacts-footer .pfone:focus {
+  color: var(--blu-text);
+}
+
+.contacts-footer .addres:hover,
+.contacts-footer .addres:focus {
+  color: var(--blu-text);
+}
+
+.contacts-nav .mail {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  color: var(--grey-text);
+
+  transition: color 250ms var(--timing-function);
+}
+
+.contacts-nav .pfone {
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  color: var(--grey-text);
+
+  transition: color 250ms var(--timing-function);
+}
+
+.contacts-footer .mail,
+.pfone {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  color: var(--white-transparent-text);
+
+  transition: color 250ms var(--timing-function);
+}
+
+.fon-footer {
+  background-color: var(--grey-fone);
+  padding: 60px 0;
+}
+
+ul {
+  list-style: none;
+}
+
+button {
+  border: none;
+}
+
+.link,
+.webstudio-nav,
+.webstudio-footer,
+.mail,
+.pfone,
+.addres {
+  text-decoration: none;
+}
+
+.link-item::after {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  content: '';
+
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  background-color: var(--blu-text);
+
+  opacity: 0;
+  transition: opacity 250ms var(--timing-function);
+}
+
+.link-item:hover::after,
+.link-item:focus::after {
+  opacity: 1;
+}
+
+.link-first::after {
+  opacity: 1;
+}
+
+.item-studio {
+  position: relative;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/* Стили для геометрии общие */
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.container-nav {
+  display: flex;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+}
+
+.nav-link {
+  display: flex;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+
+.contacts-nav {
+  margin: 0;
+  margin-left: auto;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+
+.nav-link .item-studio:not(:last-child) {
+  margin-right: 50px;
+}
+
+.webstudio-nav {
+  margin-right: 93px;
+}
+
+.webstudio-footer {
+  display: inline-block;
+  margin-left: 0;
+
+  margin-bottom: 20px;
+}
+
+.contacts-footer {
+  padding: 0;
+  margin: 0;
+}
+
+.contacts-nav .item-nav + .item-nav {
+  margin-left: 50px;
+}
+
+.contacts-footer .item:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+h1,
+h3,
+p,
+h2 {
+  margin: 0;
+}
+
+/* Добавление и форматирование иконок для HEADER */
+
+.contacts-nav {
+  padding: 0;
+}
+
+.contacts-nav .mail,
+.contacts-nav .pfone {
+  min-width: 161px;
+  display: flex;
+  align-items: center;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.icon-mail {
+  width: 16px;
+  height: 12px;
+  display: block;
+  margin-right: 10px;
+  fill: currentColor;
+}
+
+.icon-tel {
+  width: 10px;
+  height: 16px;
+  display: block;
+  margin-right: 10px;
+  fill: currentColor;
+}
+
+/* СОЦСЕТИ В ФУТЕРЕ */
+
+.container-footer {
+  display: flex;
+  align-items: baseline;
+}
+
+.footer-links {
+  margin-left: 70px;
+}
+
+.link-footer:not(:last-child) {
+  margin-right: 10px;
+}
+
+.connect {
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  color: var(--white-text);
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.icon-footer {
+  fill: var(--white-text);
+}
+
+.item-footer {
+  background-color: var(--backgrouund-links-footer);
+}
+
+.social-list {
+  margin: 0;
+}
+
+/* ФОРМА В ФУТЕРЕ */
+
+.form-footer {
+  display: block;
+  padding: 0;
+  margin: 0;
+  justify-content: center;
+  align-items: center;
+  margin-left: 93px;
+}
+
+.input-footer {
+  margin: 0;
+  padding: 0;
+  padding-left: 16px;
+  width: 358px;
+  height: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  color: var(--white-text);
+  background-color: inherit;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+}
+
+.container-form {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-footer input::placeholder {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  color: var(--white-transparent-text);
+  letter-spacing: 0.03em;
+}
+
+.btn-footer {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 50px;
+  padding: 0;
+  margin: 0;
+  margin-left: 12px;
+  border-radius: 4px;
+  font-family: inherit;
+  background-color: var(--blu-text);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+  text-align: center;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  color: var(--white-text);
+}
+
+.icon-send {
+  margin-left: 10px;
+  width: 24px;
+  height: 24px;
+}
