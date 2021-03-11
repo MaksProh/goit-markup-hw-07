@@ -22,7 +22,7 @@ h1 {
 
 /* КОНТЕЙНЕР ГЕРОЯ */
 
-.fon-hero {
+.hero {
   width: 1600px;
   padding: 200px 0;
   margin: 0 auto;
@@ -37,7 +37,14 @@ h1 {
   background-color: var(--background-hero);
 }
 
-.text-hero {
+.hero__container {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+  text-align: center;
+}
+
+.hero__container-title {
   display: inline-block;
   margin-bottom: 20px;
   width: 696px;
@@ -45,14 +52,7 @@ h1 {
   text-transform: uppercase;
 }
 
-.container-hero {
-  width: 1200px;
-  margin: 0 auto;
-  padding: 0 15px;
-  text-align: center;
-}
-
-.hero-button {
+.hero__container-button {
   display: block;
   margin: 0 auto;
   min-width: 200px;
@@ -72,42 +72,40 @@ h1 {
 
 /* НАШИ ПРЕИМУЩЕСТВА */
 
-.container-advantages {
+.advantages--container {
   padding-top: 94px;
 }
 
-.list-advantages .advantages {
+.advantages__list {
+  display: flex;
+  flex-wrap: wrap;
+
+  padding: 0;
+  margin: 0;
+  margin-left: -30px;
+}
+
+.advantages__list-title {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   margin-bottom: 10px;
 }
 
-.list-advantages .list-description {
+.advantages__list-description {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   color: var(--grey-text);
 }
 
-.list-advantages {
-  padding: 0;
-  margin: 0;
-}
-
-.list-advantages {
-  display: flex;
-  flex-wrap: wrap;
-  margin-left: -30px;
-}
-
-.list-advantages .item {
+.advantages__list li {
   display: block;
   margin-left: 30px;
   flex-basis: calc(100% / 4 - 30px);
 }
 
-.container-icon {
+.advant {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -117,18 +115,18 @@ h1 {
   margin-bottom: 30px;
 }
 
-.icon-antenna {
+.advant__icon {
   width: 70px;
   height: 70px;
 }
 
 /* ЧЕМ МЫ ЗАНИМАЕМСЯ */
 
-.container-work {
+.container--work {
   padding: 94px 0;
 }
 
-.work-img {
+.work__img {
   display: inline-flex;
   flex-wrap: wrap;
   padding: 0;
@@ -136,32 +134,32 @@ h1 {
   margin-left: -30px;
 }
 
-.work-img .item {
+.work__img-item {
   margin-left: 30px;
   width: calc(100% / 3 - 30px);
 }
 
-.work {
+.work__title {
   text-align: center;
   margin-bottom: 50px;
 }
 
-.thumb-work {
+.work__thumb {
   height: 294px;
 }
 
-.work-img .item {
+.work__img-item {
   position: relative;
 }
 
-.work-img .img {
+.work__thumb img {
   display: block;
   max-width: 100%;
   max-height: 100%;
   object-fit: cover;
 }
 
-.descript {
+.work__img-descript {
   position: absolute;
   bottom: 0;
   width: 100%;
@@ -180,30 +178,35 @@ h1 {
 
 /* НАША КОМАНДА */
 
-.title-command {
+.command {
+  padding: 94px 0px;
+  background-color: var(--background-btn);
+}
+
+.command__list {
   margin: 0;
   padding: 0;
 }
 
-.thumb-command {
+.command__thumb {
   height: 260px;
 }
 
-.title-command img {
+.command__list img {
   display: block;
   max-width: 100%;
   max-height: 100%;
   object-fit: cover;
 }
 
-.title-command .initials {
+.workman__initials {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
   color: var(--black-text);
 }
 
-.title-command .profession {
+.workman__profession {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.19;
@@ -211,24 +214,19 @@ h1 {
   margin-bottom: 16px;
 }
 
-.command {
+.command__title {
   text-align: center;
   margin-bottom: 50px;
 }
 
-.fon-command {
-  padding: 94px 0px;
-  background-color: var(--background-btn);
-}
-
-.title-command {
+.command__list {
   padding: 0;
   display: flex;
   flex-wrap: wrap;
   margin-left: -30px;
 }
 
-.title-command .item {
+.command__list-item {
   width: calc(100% / 4 - 30px);
   margin-left: 30px;
   text-align: center;
@@ -239,23 +237,24 @@ h1 {
   border-radius: 0px 0px 4px 4px;
 }
 
-.initials {
+.workman__initials {
   margin-bottom: 10px;
 }
 
-.command-common {
+.workman {
   padding: 30px 32px;
 }
 
 /* ИКОНКИ СОЦ.СЕТЕЙ В КАРТОЧКАХ КОМАНДЫ */
 
-.social-list {
+.soclinks__list {
   padding: 0;
+  margin: 0;
   display: flex;
   justify-content: space-between;
 }
 
-.icon-link {
+.soclinks__icon {
   width: 20px;
   height: 20px;
   fill: var(--color-link);
@@ -263,13 +262,13 @@ h1 {
   transition: fill 250ms var(--timing-function);
 }
 
-.social-link {
+.soclinks__item {
   width: 44px;
   height: 44px;
   border-radius: 50%;
 }
 
-.item-link {
+.soclinks__link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -282,37 +281,32 @@ h1 {
   transition: background-color 250ms var(--timing-function);
 }
 
-.item-link:hover,
-.item-link:focus {
+.soclinks__link:hover,
+.soclinks__link:focus {
   background-color: var(--blu-text);
 }
 
-.item-link:hover .icon-link,
-.item-link:focus .icon-link {
+.soclinks__link:hover .soclinks__icon,
+.soclinks__link:focus .soclinks__icon {
   fill: currentColor;
 }
 
 /* ПОСТОЯННЫT КЛИЕНТЫ */
 
-.container-clients {
+.container--clients {
   padding-top: 94px;
   padding-bottom: 94px;
 }
 
-.clients-title {
+.clients__title {
   margin-bottom: 50px;
 }
 
-.clients {
-  padding: 94px auto;
-  margin: 0 auto;
-}
-
-.clients-title {
+.clients__title {
   text-align: center;
 }
 
-.clients-list {
+.clients__list {
   margin: 0;
   padding: 0;
   display: flex;
@@ -320,19 +314,19 @@ h1 {
   margin-left: -30px;
 }
 
-.clients-item {
+.clients__item {
   height: 90px;
   flex-basis: calc(100% / 6 - 30px);
   margin-left: 30px;
 }
 
-.clients-link:hover,
-.clients-link:focus {
+.clients__link:hover,
+.clients__link:focus {
   border: 1px solid var(--blu-text);
   color: var(--blu-text);
 }
 
-.clients-link {
+.clients__link {
   display: flex;
   width: 100%;
   height: 100%;
@@ -344,7 +338,7 @@ h1 {
     color 250ms var(--timing-function);
 }
 
-.icon-yaco {
+.clients__icon-yaco {
   width: 44.27px;
   height: 49.23px;
   fill: var(--color-link);
@@ -352,7 +346,7 @@ h1 {
   transition: fill 250ms var(--timing-function);
 }
 
-.icon-tagline {
+.clients__icon-tagline {
   width: 40px;
   height: 52px;
   fill: var(--color-link);
@@ -360,7 +354,7 @@ h1 {
   transition: fill 250ms var(--timing-function);
 }
 
-.icon-company {
+.clients__icon-company {
   width: 41px;
   height: 42.6px;
   fill: var(--color-link);
@@ -368,7 +362,7 @@ h1 {
   transition: fill 250ms var(--timing-function);
 }
 
-.icon-brand {
+.clients__icon-brand {
   width: 59px;
   height: 47px;
   fill: var(--color-link);
@@ -376,7 +370,7 @@ h1 {
   transition: fill 250ms var(--timing-function);
 }
 
-.icon-foster {
+.clients__icon-foster {
   width: 79.66px;
   height: 42.02px;
   fill: var(--color-link);
@@ -384,7 +378,7 @@ h1 {
   transition: fill 250ms var(--timing-function);
 }
 
-.icon-ctl {
+.clients__icon-ctl {
   width: 88.48px;
   height: 45.44px;
   fill: var(--color-link);
@@ -392,20 +386,20 @@ h1 {
   transition: fill 250ms var(--timing-function);
 }
 
-.clients-link:hover .icon-yaco,
-.clients-link:hover .icon-tagline,
-.clients-link:hover .icon-company,
-.clients-link:hover .icon-ctl,
-.clients-link:hover .icon-foster,
-.clients-link:hover .icon-brand {
+.clients__link:hover .clients__icon-yaco,
+.clients__link:hover .clients__icon-tagline,
+.clients__link:hover .clients__icon-company,
+.clients__link:hover .clients__icon-ctl,
+.clients__link:hover .clients__icon-foster,
+.clients__link:hover .clients__icon-brand {
   fill: currentColor;
 }
 
-.clients-link:focus .icon-yaco,
-.clients-link:focus .icon-tagline,
-.clients-link:focus .icon-company,
-.clients-link:focus .icon-ctl,
-.clients-link:focus .icon-foster,
-.clients-link:focus .icon-brand {
+.clients__link:focus .clients__icon-yaco,
+.clients__link:focus .clients__icon-tagline,
+.clients__link:focus .clients__icon-company,
+.clients__link:focus .clients__icon-ctl,
+.clients__link:focus .clients__icon-foster,
+.clients__link:focus .clients__icon-brand {
   fill: currentColor;
 }

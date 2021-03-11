@@ -21,118 +21,21 @@
   --border-nav-portfolio: #ececec;
 }
 
+body {
+  font-family: Roboto, sans-serif;
+  margin: 0;
+}
+
+h1 {
+  text-align: center;
+  color: var(--white-text);
+  font-size: 44px;
+  line-height: 1.36;
+  font-weight: 900;
+}
+
 address {
   font: inherit;
-}
-
-.nav .link {
-  display: inline-block;
-  padding-top: 32px;
-  padding-bottom: 32px;
-
-  font-weight: 500;
-  color: var(--black-text);
-  font-size: 14px;
-  line-height: 1.14;
-
-  transition: color 250ms var(--timing-function);
-}
-
-.link-first {
-  display: inline-block;
-  padding-top: 32px;
-  padding-bottom: 32px;
-
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  color: var(--blu-text);
-  text-decoration: none;
-}
-
-.nav .link:hover,
-.nav .link:focus {
-  color: var(--blu-text);
-}
-
-.webstudio-nav,
-.webstudio-footer {
-  font-family: Raleway, sans-serif;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-  color: var(--bold-black);
-}
-
-.web {
-  color: var(--blu-text);
-}
-
-.studio {
-  color: var(--white-text);
-}
-
-.addres {
-  color: var(--white-text);
-  font-size: 14px;
-  line-height: 1.71;
-
-  transition: color 250ms var(--timing-function);
-}
-
-.contacts-nav .mail:hover,
-.contacts-nav .mail:focus,
-.contacts-footer .mail:hover,
-.contacts-footer .mail:focus {
-  color: var(--blu-text);
-}
-
-.contacts-nav .pfone:hover,
-.contacts-nav .pfone:focus,
-.contacts-footer .pfone:hover,
-.contacts-footer .pfone:focus {
-  color: var(--blu-text);
-}
-
-.contacts-footer .addres:hover,
-.contacts-footer .addres:focus {
-  color: var(--blu-text);
-}
-
-.contacts-nav .mail {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  color: var(--grey-text);
-
-  transition: color 250ms var(--timing-function);
-}
-
-.contacts-nav .pfone {
-  padding-top: 32px;
-  padding-bottom: 32px;
-
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  color: var(--grey-text);
-
-  transition: color 250ms var(--timing-function);
-}
-
-.contacts-footer .mail,
-.pfone {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
-  color: var(--white-transparent-text);
-
-  transition: color 250ms var(--timing-function);
-}
-
-.fon-footer {
-  background-color: var(--grey-fone);
-  padding: 60px 0;
 }
 
 ul {
@@ -143,41 +46,19 @@ button {
   border: none;
 }
 
-.link,
-.webstudio-nav,
-.webstudio-footer,
-.mail,
-.pfone,
-.addres {
+a {
   text-decoration: none;
 }
 
-.link-item::after {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  content: '';
-
-  width: 100%;
-  height: 4px;
-  border-radius: 2px;
-  background-color: var(--blu-text);
-
-  opacity: 0;
-  transition: opacity 250ms var(--timing-function);
+textarea {
+  resize: none;
 }
 
-.link-item:hover::after,
-.link-item:focus::after {
-  opacity: 1;
-}
-
-.link-first::after {
-  opacity: 1;
-}
-
-.item-studio {
-  position: relative;
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .visually-hidden {
@@ -193,14 +74,14 @@ button {
   overflow: hidden;
 }
 
-/* Стили для геометрии общие */
-
-.container {
-  width: 1200px;
-  margin: 0 auto;
-  padding-left: 15px;
-  padding-right: 15px;
+h1,
+h3,
+p,
+h2 {
+  margin: 0;
 }
+
+/* /////////////////////НАВИГАЦИЯ///////////////////// */
 
 .container-nav {
   display: flex;
@@ -211,14 +92,90 @@ button {
   align-items: center;
 }
 
-.nav-link {
+.nav__logo {
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  color: var(--bold-black);
+}
+
+.nav__logo-text {
+  color: var(--blu-text);
+}
+
+.nav__logo--step {
+  margin-right: 93px;
+}
+
+.nav__list li:not(:last-child) {
+  margin-right: 50px;
+}
+
+.nav__list {
   display: flex;
   align-items: center;
   padding: 0;
   margin: 0;
 }
 
-.contacts-nav {
+.nav__list-link {
+  display: inline-block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  font-weight: 500;
+  color: var(--black-text);
+  font-size: 14px;
+  line-height: 1.14;
+
+  transition: color 250ms var(--timing-function);
+}
+
+.nav__list-link:hover,
+.nav__list-link:focus {
+  color: var(--blu-text);
+}
+
+.nav__link--studio {
+  display: inline-block;
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  color: var(--blu-text);
+  text-decoration: none;
+}
+
+.nav__list-link::after {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  content: '';
+
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  background-color: var(--blu-text);
+
+  opacity: 0;
+  transition: opacity 250ms var(--timing-function);
+}
+
+.nav__list-link:hover::after,
+.nav__list-link:focus::after {
+  opacity: 1;
+}
+
+.nav__link--studio::after {
+  opacity: 1;
+}
+
+.nav__list-item {
+  position: relative;
+}
+
+.nav__contacts {
   margin: 0;
   margin-left: auto;
   padding: 0;
@@ -226,57 +183,32 @@ button {
   align-items: center;
 }
 
-.nav-link .item-studio:not(:last-child) {
-  margin-right: 50px;
-}
-
-.webstudio-nav {
-  margin-right: 93px;
-}
-
-.webstudio-footer {
-  display: inline-block;
-  margin-left: 0;
-
-  margin-bottom: 20px;
-}
-
-.contacts-footer {
-  padding: 0;
-  margin: 0;
-}
-
-.contacts-nav .item-nav + .item-nav {
+.nav__contacts .nav__contacts-item + .nav__contacts-item {
   margin-left: 50px;
 }
 
-.contacts-footer .item:not(:last-child) {
-  margin-bottom: 9px;
-}
-
-h1,
-h3,
-p,
-h2 {
-  margin: 0;
-}
-
-/* Добавление и форматирование иконок для HEADER */
-
-.contacts-nav {
-  padding: 0;
-}
-
-.contacts-nav .mail,
-.contacts-nav .pfone {
-  min-width: 161px;
+.nav__contacts-link {
   display: flex;
   align-items: center;
+
+  min-width: 161px;
   padding-top: 32px;
   padding-bottom: 32px;
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  color: var(--grey-text);
+
+  transition: color 250ms var(--timing-function);
 }
 
-.icon-mail {
+.nav__contacts-link:hover,
+.nav__contacts-link:focus {
+  color: var(--blu-text);
+}
+
+.icon__mail {
   width: 16px;
   height: 12px;
   display: block;
@@ -284,7 +216,7 @@ h2 {
   fill: currentColor;
 }
 
-.icon-tel {
+.icon__tel {
   width: 10px;
   height: 16px;
   display: block;
@@ -292,22 +224,69 @@ h2 {
   fill: currentColor;
 }
 
-/* СОЦСЕТИ В ФУТЕРЕ */
+/* ///////////////////ПОДВАЛ//////////////////////
 
-.container-footer {
+*/
+.container--footer {
   display: flex;
   align-items: baseline;
 }
 
-.footer-links {
+.logo-footer--step {
+  display: inline-block;
+  margin-left: 0;
+
+  margin-bottom: 20px;
+}
+
+.logo__footer-text {
+  color: var(--white-text);
+}
+
+.address__list {
+  padding: 0;
+  margin: 0;
+}
+
+.address__list .address__list-item:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+.address__list-link:hover,
+.address__list-link:focus {
+  color: var(--blu-text);
+}
+
+.address__list-link {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  color: var(--white-transparent-text);
+
+  transition: color 250ms var(--timing-function);
+}
+
+.address--color {
+  color: var(--white-text);
+}
+
+.footer {
+  background-color: var(--grey-fone);
+  padding: 60px 0;
+}
+
+/* СОЦСЕТИ В ФУТЕРЕ */
+
+.soclinks__container {
   margin-left: 70px;
 }
 
-.link-footer:not(:last-child) {
+.soclinks__item--footer:not(:last-child) {
   margin-right: 10px;
 }
 
-.connect {
+.soclinks__container-title,
+.form__footer-title {
   margin-bottom: 20px;
   font-weight: 700;
   font-size: 14px;
@@ -317,21 +296,17 @@ h2 {
   text-transform: uppercase;
 }
 
-.icon-footer {
+.soclinks__icon--footer {
   fill: var(--white-text);
 }
 
-.item-footer {
+.soclinks__link--footer {
   background-color: var(--backgrouund-links-footer);
-}
-
-.social-list {
-  margin: 0;
 }
 
 /* ФОРМА В ФУТЕРЕ */
 
-.form-footer {
+.form__footer {
   display: block;
   padding: 0;
   margin: 0;
@@ -340,7 +315,7 @@ h2 {
   margin-left: 93px;
 }
 
-.input-footer {
+.form__footer-input {
   margin: 0;
   padding: 0;
   padding-left: 16px;
@@ -358,14 +333,14 @@ h2 {
   line-height: 1.25;
 }
 
-.container-form {
+.form__container {
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.form-footer input::placeholder {
+.form__footer-input::placeholder {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.25;
@@ -373,7 +348,7 @@ h2 {
   letter-spacing: 0.03em;
 }
 
-.btn-footer {
+.form__footer-btn {
   position: relative;
   display: flex;
   justify-content: center;
@@ -395,7 +370,7 @@ h2 {
   color: var(--white-text);
 }
 
-.icon-send {
+.form__footer-btn svg {
   margin-left: 10px;
   width: 24px;
   height: 24px;

@@ -34,7 +34,7 @@
   transition: transform 250ms var(--timing-function);
 }
 
-.close {
+.modal__close {
   position: absolute;
   top: 0;
   right: 0;
@@ -57,12 +57,12 @@
     fill 250ms var(--timing-function);
 }
 
-.close:hover .modal-svg,
-.close:focus .modal-svg {
+.modal__close:hover .modal__close-svg,
+.modal__close:focus .modal__close-svg {
   fill: currentColor;
 }
 
-.modal-svg {
+.modal__close-svg {
   width: 18px;
   height: 18px;
   transition: fill 250ms var(--timing-function);
@@ -70,39 +70,36 @@
 
 /* ФОРМА В МОДАЛЬНОМ ОКНЕ */
 
-.form-modal {
+.modal__form {
   display: flex;
   flex-direction: column;
 }
 
-.desc-form {
-  display: inline-block;
-  padding: 0;
-  margin-bottom: 12px;
-}
-
-.container-initials {
+.feedback__initials {
   position: relative;
   display: flex;
   flex-direction: column;
+
+  padding: 0;
+  margin-bottom: 12px;
   list-style: none;
 }
 
-.input-modal:hover,
-.input-modal:focus {
+.feedback__initials-input:hover,
+.feedback__initials-input:focus {
   border-color: var(--blu-text);
 }
 
-.input-modal:focus {
+.feedback__initials-input:focus {
   outline: none;
 }
 
-.input-modal:hover ~ .input-svg,
-.input-modal:focus ~ .input-svg {
+.feedback__initials-input:hover ~ .input-svg,
+.feedback__initials-input:focus ~ .input-svg {
   fill: var(--blu-text);
 }
 
-.input-name {
+.feedback__initials-name {
   display: inline-block;
   margin: 0;
   padding: 0;
@@ -114,7 +111,7 @@
   margin-bottom: 4px;
 }
 
-.input-modal {
+.feedback__initials-input {
   height: 40px;
   padding: 0;
   padding-left: 30px;
@@ -129,7 +126,7 @@
   transition: border 250ms var(--timing-function);
 }
 
-.input-svg {
+.feedback__initials-svg {
   width: 18px;
   height: 18px;
   position: absolute;
@@ -138,25 +135,20 @@
   transition: fill 250ms var(--timing-function);
 }
 
-textarea {
-  resize: none;
-  height: 120px;
-}
-
-.container-initials textarea {
+.feedback__initials textarea {
   padding: 12px 16px;
   min-height: 120px;
 }
 
-.container-initials textarea::placeholder {
+.feedback__initials textarea::placeholder {
   color: rgba(117, 117, 117, 0.5);
 }
 
-.form-modal .container-initials:not(:last-child) {
+.modal__form .feedback__initials:not(:last-child) {
   margin-bottom: 10px;
 }
 
-.btn-modal {
+.modal__btn {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -177,7 +169,7 @@ textarea {
   letter-spacing: 0.06em;
 }
 
-.contract {
+.feedback__contract-link {
   color: var(--blu-text);
   font-weight: 400;
   font-size: 14px;
@@ -185,7 +177,7 @@ textarea {
   letter-spacing: 0.03em;
 }
 
-.container-contract {
+.feedback__contract {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -199,7 +191,7 @@ textarea {
   letter-spacing: 0.03em;
 }
 
-.checkbox {
+.feedback__contract-checkbox {
   margin-right: 7px;
   width: 16px;
   height: 15px;
@@ -207,19 +199,19 @@ textarea {
   border-radius: 2px;
 }
 
-.checkbox use {
+.feedback__contract-checkbox use {
   display: none;
 }
 
-.check:checked + .checkbox {
+.feedback__contract-check:checked + .checkbox {
   border: none;
 }
 
-.check:checked + .checkbox use {
+.feedback__contract-check:checked + .checkbox use {
   display: inline-block;
 }
 
-.check {
+.feedback__contract-check {
   position: absolute;
   width: 1px;
   height: 1px;
