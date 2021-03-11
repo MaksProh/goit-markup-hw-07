@@ -137,7 +137,7 @@ h2 {
   color: var(--blu-text);
 }
 
-.nav__link--studio {
+.nav__link--active {
   display: inline-block;
 
   font-weight: 500;
@@ -167,7 +167,7 @@ h2 {
   opacity: 1;
 }
 
-.nav__link--studio::after {
+.nav__link--active::after {
   opacity: 1;
 }
 
