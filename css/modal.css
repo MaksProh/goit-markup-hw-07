@@ -34,6 +34,18 @@
   transition: transform 250ms var(--timing-function);
 }
 
+.modal__title {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 12px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.91;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
 .modal__close {
   position: absolute;
   top: 0;
@@ -57,12 +69,12 @@
     fill 250ms var(--timing-function);
 }
 
-.modal__close:hover .modal__close-svg,
-.modal__close:focus .modal__close-svg {
+.modal__close:hover .modal__svg,
+.modal__close:focus .modal__svg {
   fill: currentColor;
 }
 
-.modal__close-svg {
+.modal__svg {
   width: 18px;
   height: 18px;
   transition: fill 250ms var(--timing-function);
@@ -70,12 +82,12 @@
 
 /* ФОРМА В МОДАЛЬНОМ ОКНЕ */
 
-.modal__form {
+.feedback {
   display: flex;
   flex-direction: column;
 }
 
-.feedback__initials {
+.feedback-initials {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -85,21 +97,21 @@
   list-style: none;
 }
 
-.feedback__initials-input:hover,
-.feedback__initials-input:focus {
+.feedback-initials__input:hover,
+.feedback-initials__input:focus {
   border-color: var(--blu-text);
 }
 
-.feedback__initials-input:focus {
+.feedback-initials__input:focus {
   outline: none;
 }
 
-.feedback__initials-input:hover ~ .input-svg,
-.feedback__initials-input:focus ~ .input-svg {
+.feedback-initials__input:hover ~ .feedback-initials__svg,
+.feedback-initials__input:focus ~ .feedback-initials__svg {
   fill: var(--blu-text);
 }
 
-.feedback__initials-name {
+.feedback-initials__name {
   display: inline-block;
   margin: 0;
   padding: 0;
@@ -111,7 +123,7 @@
   margin-bottom: 4px;
 }
 
-.feedback__initials-input {
+.feedback-initials__input {
   height: 40px;
   padding: 0;
   padding-left: 30px;
@@ -126,7 +138,7 @@
   transition: border 250ms var(--timing-function);
 }
 
-.feedback__initials-svg {
+.feedback-initials__svg {
   width: 18px;
   height: 18px;
   position: absolute;
@@ -135,20 +147,20 @@
   transition: fill 250ms var(--timing-function);
 }
 
-.feedback__initials textarea {
+.feedback-initials__input--text {
   padding: 12px 16px;
   min-height: 120px;
 }
 
-.feedback__initials textarea::placeholder {
+.feedback-initials__input--text::placeholder {
   color: rgba(117, 117, 117, 0.5);
 }
 
-.modal__form .feedback__initials:not(:last-child) {
+.feedback-initials:not(:last-child) {
   margin-bottom: 10px;
 }
 
-.modal__btn {
+.feedback__btn {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -169,7 +181,8 @@
   letter-spacing: 0.06em;
 }
 
-.feedback__contract-link {
+.feedback-contract__link {
+  text-decoration: underline;
   color: var(--blu-text);
   font-weight: 400;
   font-size: 14px;
@@ -177,7 +190,7 @@
   letter-spacing: 0.03em;
 }
 
-.feedback__contract {
+.feedback-contract {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -191,7 +204,7 @@
   letter-spacing: 0.03em;
 }
 
-.feedback__contract-checkbox {
+.feedback-contract__icon {
   margin-right: 7px;
   width: 16px;
   height: 15px;
@@ -199,19 +212,21 @@
   border-radius: 2px;
 }
 
-.feedback__contract-checkbox use {
+.feedback-contract__use {
   display: none;
 }
 
-.feedback__contract-check:checked + .checkbox {
+.feedback-contract__check:checked + .feedback-contract__icon {
   border: none;
 }
 
-.feedback__contract-check:checked + .checkbox use {
+.feedback-contract__check:checked
+  + .feedback-contract__icon
+  .feedback-contract__use {
   display: inline-block;
 }
 
-.feedback__contract-check {
+.feedback-contract__check {
   position: absolute;
   width: 1px;
   height: 1px;

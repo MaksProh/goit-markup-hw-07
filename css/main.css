@@ -11,13 +11,18 @@ h1 {
   font-weight: 900;
 }
 
-.work,
-.command,
+.work__title,
+.command__title,
+.advantages__title,
 .clients__title {
+  margin-bottom: 50px;
+  text-align: center;
+
   font-weight: 700;
-  line-height: 1.16;
-  color: var(--black-text);
   font-size: 36px;
+  line-height: 1.16;
+  letter-spacing: 0.03em;
+  color: var(--black-text);
 }
 
 /* КОНТЕЙНЕР ГЕРОЯ */
@@ -72,11 +77,24 @@ h1 {
 
 /* НАШИ ПРЕИМУЩЕСТВА */
 
-.advantages--container {
+.containe--advantages {
   padding-top: 94px;
 }
 
-.advantages__list {
+.advantages__title--visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.advantages-list {
   display: flex;
   flex-wrap: wrap;
 
@@ -85,27 +103,27 @@ h1 {
   margin-left: -30px;
 }
 
-.advantages__list-title {
+.advantages-list__title {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   margin-bottom: 10px;
 }
 
-.advantages__list-description {
+.advantages-list__description {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   color: var(--grey-text);
 }
 
-.advantages__list li {
+.advantages-list__item {
   display: block;
   margin-left: 30px;
   flex-basis: calc(100% / 4 - 30px);
 }
 
-.advant {
+.container-advantages__icon {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -115,7 +133,7 @@ h1 {
   margin-bottom: 30px;
 }
 
-.advant__icon {
+.advantages__icon {
   width: 70px;
   height: 70px;
 }
@@ -126,7 +144,7 @@ h1 {
   padding: 94px 0;
 }
 
-.work__img {
+.work-list {
   display: inline-flex;
   flex-wrap: wrap;
   padding: 0;
@@ -134,32 +152,27 @@ h1 {
   margin-left: -30px;
 }
 
-.work__img-item {
+.work-list__item {
   margin-left: 30px;
   width: calc(100% / 3 - 30px);
-}
-
-.work__title {
-  text-align: center;
-  margin-bottom: 50px;
 }
 
 .work__thumb {
   height: 294px;
 }
 
-.work__img-item {
+.work-list__item {
   position: relative;
 }
 
-.work__thumb img {
+.work__img {
   display: block;
   max-width: 100%;
   max-height: 100%;
   object-fit: cover;
 }
 
-.work__img-descript {
+.work-list__descript {
   position: absolute;
   bottom: 0;
   width: 100%;
@@ -214,11 +227,6 @@ h1 {
   line-height: 1.19;
   color: var(--grey-text);
   margin-bottom: 16px;
-}
-
-.command__title {
-  text-align: center;
-  margin-bottom: 50px;
 }
 
 .workman-list {
@@ -296,11 +304,6 @@ h1 {
   padding-bottom: 94px;
 }
 
-.clients__title {
-  margin-bottom: 50px;
-  text-align: center;
-}
-
 .clients-list {
   margin: 0;
   padding: 0;
@@ -372,10 +375,7 @@ h1 {
 .clients-list__link:hover .clients-list__icon,
 .clients-list__link:hover .clients-list__icon,
 .clients-list__link:hover .clients-list__icon,
-.clients-list__link:hover
-  .clients-list__icon
-  .clients-list__link:hover
-  .clients-list__icon,
+.clients-list__link:hover .clients-list__icon,
 .clients-list__link:hover .clients-list__icon {
   fill: currentColor;
 }
@@ -383,10 +383,8 @@ h1 {
 .clients-list__link:focus .clients-list__icon,
 .clients-list__link:focus .clients-list__icon,
 .clients-list__link:focus .clients-list__icon,
-.clients-list__link:focus
-  .clients-list__icon
-  .clients-list__link:focus
-  .clients-list__icon,
+.clients-list__link:focus .clients-list__icon,
+.clients-list__link:focus .clients-list__icon,
 .clients-list__link:focus .clients-list__icon {
   fill: currentColor;
 }
