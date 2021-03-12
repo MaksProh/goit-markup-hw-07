@@ -183,30 +183,32 @@ h1 {
   background-color: var(--background-btn);
 }
 
-.command__list {
+.workman-list {
   margin: 0;
   padding: 0;
 }
 
-.command__thumb {
+.workman-list__thumb {
   height: 260px;
 }
 
-.command__list img {
+.workman-list__img {
   display: block;
   max-width: 100%;
   max-height: 100%;
   object-fit: cover;
 }
 
-.workman__initials {
+.workman-date__initials {
+  margin-bottom: 10px;
+
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
   color: var(--black-text);
 }
 
-.workman__profession {
+.workman-date__profession {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.19;
@@ -219,14 +221,14 @@ h1 {
   margin-bottom: 50px;
 }
 
-.command__list {
+.workman-list {
   padding: 0;
   display: flex;
   flex-wrap: wrap;
   margin-left: -30px;
 }
 
-.command__list-item {
+.workman-list__item {
   width: calc(100% / 4 - 30px);
   margin-left: 30px;
   text-align: center;
@@ -237,24 +239,20 @@ h1 {
   border-radius: 0px 0px 4px 4px;
 }
 
-.workman__initials {
-  margin-bottom: 10px;
-}
-
-.workman {
+.workman-date {
   padding: 30px 32px;
 }
 
 /* ИКОНКИ СОЦ.СЕТЕЙ В КАРТОЧКАХ КОМАНДЫ */
 
-.soclinks__list {
+.soclinks-list {
   padding: 0;
   margin: 0;
   display: flex;
   justify-content: space-between;
 }
 
-.soclinks__icon {
+.soclinks-list__icon {
   width: 20px;
   height: 20px;
   fill: var(--color-link);
@@ -262,13 +260,13 @@ h1 {
   transition: fill 250ms var(--timing-function);
 }
 
-.soclinks__item {
+.soclinks-list__item {
   width: 44px;
   height: 44px;
   border-radius: 50%;
 }
 
-.soclinks__link {
+.soclinks-list__link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -281,13 +279,13 @@ h1 {
   transition: background-color 250ms var(--timing-function);
 }
 
-.soclinks__link:hover,
-.soclinks__link:focus {
+.soclinks-list__link:hover,
+.soclinks-list__link:focus {
   background-color: var(--blu-text);
 }
 
-.soclinks__link:hover .soclinks__icon,
-.soclinks__link:focus .soclinks__icon {
+.soclinks-list__link:hover .soclinks-list__icon,
+.soclinks-list__link:focus .soclinks-list__icon {
   fill: currentColor;
 }
 

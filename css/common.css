@@ -232,32 +232,32 @@ h2 {
   align-items: baseline;
 }
 
-.logo-footer--step {
+.footer__logo {
   display: inline-block;
   margin-left: 0;
 
   margin-bottom: 20px;
 }
 
-.logo__footer-text {
+.logo__text--footer {
   color: var(--white-text);
 }
 
-.address__list {
+.address-list {
   padding: 0;
   margin: 0;
 }
 
-.address__list .address__list-item:not(:last-child) {
+.address-list__item:not(:last-child) {
   margin-bottom: 9px;
 }
 
-.address__list-link:hover,
-.address__list-link:focus {
+.address-list__link:hover,
+.address-list__link:focus {
   color: var(--blu-text);
 }
 
-.address__list-link {
+.address-list__link {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
@@ -277,15 +277,15 @@ h2 {
 
 /* СОЦСЕТИ В ФУТЕРЕ */
 
-.soclinks__container {
+.soclinks-container {
   margin-left: 70px;
 }
 
-.soclinks__item--footer:not(:last-child) {
+.soclinks-list__item--footer:not(:last-child) {
   margin-right: 10px;
 }
 
-.soclinks__container-title,
+.soclinks-container__title,
 .form__footer-title {
   margin-bottom: 20px;
   font-weight: 700;
@@ -296,11 +296,11 @@ h2 {
   text-transform: uppercase;
 }
 
-.soclinks__icon--footer {
+.soclinks-list__icon--footer {
   fill: var(--white-text);
 }
 
-.soclinks__link--footer {
+.soclinks-list__link--footer {
   background-color: var(--backgrouund-links-footer);
 }
 
