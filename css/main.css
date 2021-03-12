@@ -13,7 +13,7 @@ h1 {
 
 .work,
 .command,
-.clients-title {
+.clients__title {
   font-weight: 700;
   line-height: 1.16;
   color: var(--black-text);
@@ -298,13 +298,10 @@ h1 {
 
 .clients__title {
   margin-bottom: 50px;
-}
-
-.clients__title {
   text-align: center;
 }
 
-.clients__list {
+.clients-list {
   margin: 0;
   padding: 0;
   display: flex;
@@ -312,19 +309,19 @@ h1 {
   margin-left: -30px;
 }
 
-.clients__item {
+.clients-list__item {
   height: 90px;
   flex-basis: calc(100% / 6 - 30px);
   margin-left: 30px;
 }
 
-.clients__link:hover,
-.clients__link:focus {
+.clients-list__link:hover,
+.clients-list__link:focus {
   border: 1px solid var(--blu-text);
   color: var(--blu-text);
 }
 
-.clients__link {
+.clients-list__link {
   display: flex;
   width: 100%;
   height: 100%;
@@ -336,68 +333,60 @@ h1 {
     color 250ms var(--timing-function);
 }
 
-.clients__icon-yaco {
+.clients-list__icon {
+  fill: var(--color-link);
+
+  transition: fill 250ms var(--timing-function);
+}
+
+.clients-list__icon--yaco {
   width: 44.27px;
   height: 49.23px;
-  fill: var(--color-link);
-
-  transition: fill 250ms var(--timing-function);
 }
 
-.clients__icon-tagline {
+.clients-list__icon--tagline {
   width: 40px;
   height: 52px;
-  fill: var(--color-link);
-
-  transition: fill 250ms var(--timing-function);
 }
 
-.clients__icon-company {
+.clients-list__icon--company {
   width: 41px;
   height: 42.6px;
-  fill: var(--color-link);
-
-  transition: fill 250ms var(--timing-function);
 }
 
-.clients__icon-brand {
+.clients-list__icon--brand {
   width: 59px;
   height: 47px;
-  fill: var(--color-link);
-
-  transition: fill 250ms var(--timing-function);
 }
 
-.clients__icon-foster {
+.clients-list__icon--foster {
   width: 79.66px;
   height: 42.02px;
-  fill: var(--color-link);
-
-  transition: fill 250ms var(--timing-function);
 }
 
-.clients__icon-ctl {
+.clients-list__icon--ctl {
   width: 88.48px;
   height: 45.44px;
-  fill: var(--color-link);
-
-  transition: fill 250ms var(--timing-function);
 }
 
-.clients__link:hover .clients__icon-yaco,
-.clients__link:hover .clients__icon-tagline,
-.clients__link:hover .clients__icon-company,
-.clients__link:hover .clients__icon-ctl,
-.clients__link:hover .clients__icon-foster,
-.clients__link:hover .clients__icon-brand {
+.clients-list__link:hover .clients-list__icon,
+.clients-list__link:hover .clients-list__icon,
+.clients-list__link:hover .clients-list__icon,
+.clients-list__link:hover
+  .clients-list__icon
+  .clients-list__link:hover
+  .clients-list__icon,
+.clients-list__link:hover .clients-list__icon {
   fill: currentColor;
 }
 
-.clients__link:focus .clients__icon-yaco,
-.clients__link:focus .clients__icon-tagline,
-.clients__link:focus .clients__icon-company,
-.clients__link:focus .clients__icon-ctl,
-.clients__link:focus .clients__icon-foster,
-.clients__link:focus .clients__icon-brand {
+.clients-list__link:focus .clients-list__icon,
+.clients-list__link:focus .clients-list__icon,
+.clients-list__link:focus .clients-list__icon,
+.clients-list__link:focus
+  .clients-list__icon
+  .clients-list__link:focus
+  .clients-list__icon,
+.clients-list__link:focus .clients-list__icon {
   fill: currentColor;
 }
