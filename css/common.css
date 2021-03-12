@@ -83,7 +83,7 @@ h2 {
 
 /* /////////////////////НАВИГАЦИЯ///////////////////// */
 
-.container-nav {
+.container--nav {
   display: flex;
 }
 
@@ -92,7 +92,7 @@ h2 {
   align-items: center;
 }
 
-.nav__logo {
+.logo {
   font-family: Raleway, sans-serif;
   font-weight: 700;
   font-size: 26px;
@@ -100,26 +100,26 @@ h2 {
   color: var(--bold-black);
 }
 
-.nav__logo-text {
+.logo__text {
   color: var(--blu-text);
 }
 
-.nav__logo--step {
+.header__logo {
   margin-right: 93px;
 }
 
-.nav__list li:not(:last-child) {
+.nav-list__item:not(:last-child) {
   margin-right: 50px;
 }
 
-.nav__list {
+.nav-list {
   display: flex;
   align-items: center;
   padding: 0;
   margin: 0;
 }
 
-.nav__list-link {
+.nav-list__link {
   display: inline-block;
   padding-top: 32px;
   padding-bottom: 32px;
@@ -132,12 +132,12 @@ h2 {
   transition: color 250ms var(--timing-function);
 }
 
-.nav__list-link:hover,
-.nav__list-link:focus {
+.nav-list__link:hover,
+.nav-list__link:focus {
   color: var(--blu-text);
 }
 
-.nav__link--active {
+.nav-list__link--active {
   display: inline-block;
 
   font-weight: 500;
@@ -147,7 +147,7 @@ h2 {
   text-decoration: none;
 }
 
-.nav__list-link::after {
+.nav-list__link::after {
   position: absolute;
   left: 0;
   bottom: 0;
@@ -162,20 +162,20 @@ h2 {
   transition: opacity 250ms var(--timing-function);
 }
 
-.nav__list-link:hover::after,
-.nav__list-link:focus::after {
+.nav-list__link:hover::after,
+.nav-list__link:focus::after {
   opacity: 1;
 }
 
-.nav__link--active::after {
+.nav-list__link--active::after {
   opacity: 1;
 }
 
-.nav__list-item {
+.nav-list__item {
   position: relative;
 }
 
-.nav__contacts {
+.nav-contacts {
   margin: 0;
   margin-left: auto;
   padding: 0;
@@ -183,11 +183,11 @@ h2 {
   align-items: center;
 }
 
-.nav__contacts .nav__contacts-item + .nav__contacts-item {
+.nav-contacts .nav-contacts__item + .nav-contacts__item {
   margin-left: 50px;
 }
 
-.nav__contacts-link {
+.nav-contacts__link {
   display: flex;
   align-items: center;
 
@@ -203,25 +203,25 @@ h2 {
   transition: color 250ms var(--timing-function);
 }
 
-.nav__contacts-link:hover,
-.nav__contacts-link:focus {
+.nav-contacts__link:hover,
+.nav-contacts__link:focus {
   color: var(--blu-text);
 }
 
-.icon__mail {
-  width: 16px;
-  height: 12px;
+.nav-contacts__icon {
   display: block;
   margin-right: 10px;
   fill: currentColor;
 }
 
-.icon__tel {
+.nav-contacts__icon--mail {
+  width: 16px;
+  height: 12px;
+}
+
+.nav-contacts__icon--tel {
   width: 10px;
   height: 16px;
-  display: block;
-  margin-right: 10px;
-  fill: currentColor;
 }
 
 /* ///////////////////ПОДВАЛ//////////////////////
