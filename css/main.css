@@ -14,7 +14,7 @@ h1 {
 .work__title,
 .command__title,
 .advantages__title,
-.clients__title {
+.project__title .clients__title {
   margin-bottom: 50px;
   text-align: center;
 
