@@ -1,0 +1,89 @@
+.container--clients {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.clients-list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+}
+
+.clients-list__item {
+  height: 90px;
+  flex-basis: calc(100% / 6 - 30px);
+  margin-left: 30px;
+}
+
+.clients-list__link {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid var(--color-link);
+
+  transition: border 250ms var(--timing-function),
+    color 250ms var(--timing-function);
+
+  &:hover,
+  &:focus {
+    border: 1px solid var(--blu-text);
+    color: var(--blu-text);
+  }
+}
+
+.clients-list__icon {
+  fill: var(--color-link);
+
+  transition: fill 250ms var(--timing-function);
+}
+
+.clients-list__icon--yaco {
+  width: 44.27px;
+  height: 49.23px;
+}
+
+.clients-list__icon--tagline {
+  width: 40px;
+  height: 52px;
+}
+
+.clients-list__icon--company {
+  width: 41px;
+  height: 42.6px;
+}
+
+.clients-list__icon--brand {
+  width: 59px;
+  height: 47px;
+}
+
+.clients-list__icon--foster {
+  width: 79.66px;
+  height: 42.02px;
+}
+
+.clients-list__icon--ctl {
+  width: 88.48px;
+  height: 45.44px;
+}
+
+.clients-list__link:hover .clients-list__icon,
+.clients-list__link:hover .clients-list__icon,
+.clients-list__link:hover .clients-list__icon,
+.clients-list__link:hover .clients-list__icon,
+.clients-list__link:hover .clients-list__icon {
+  fill: currentColor;
+}
+
+.clients-list__link:focus .clients-list__icon,
+.clients-list__link:focus .clients-list__icon,
+.clients-list__link:focus .clients-list__icon,
+.clients-list__link:focus .clients-list__icon,
+.clients-list__link:focus .clients-list__icon,
+.clients-list__link:focus .clients-list__icon {
+  fill: currentColor;
+}

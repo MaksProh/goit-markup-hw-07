@@ -1,0 +1,43 @@
+.soclinks-list {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.soclinks-list__icon {
+  width: 20px;
+  height: 20px;
+  fill: var(--color-link);
+
+  transition: fill 250ms var(--timing-function);
+}
+
+.soclinks-list__item {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+}
+
+.soclinks-list__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+  color: var(--white-text);
+  background-color: var(--white-text);
+
+  transition: background-color 250ms var(--timing-function);
+
+  &:hover,
+  &:focus {
+    background-color: var(--blu-text);
+  }
+}
+
+.soclinks-list__link:hover .soclinks-list__icon,
+.soclinks-list__link:focus .soclinks-list__icon {
+  fill: currentColor;
+}

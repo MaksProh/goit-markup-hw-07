@@ -1,0 +1,59 @@
+.command {
+  padding: 94px 0px;
+  background-color: var(--background-btn);
+}
+
+.workman-list {
+  margin: 0;
+  padding: 0;
+}
+
+.workman-list__thumb {
+  height: 260px;
+}
+
+.workman-list__img {
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+}
+
+.workman-date__initials {
+  margin-bottom: 10px;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  color: var(--black-text);
+}
+
+.workman-date__profession {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.19;
+  color: var(--grey-text);
+  margin-bottom: 16px;
+}
+
+.workman-list {
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+}
+
+.workman-list__item {
+  width: calc(100% / 4 - 30px);
+  margin-left: 30px;
+  text-align: center;
+
+  background: var(--white-text);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.workman-date {
+  padding: 30px 32px;
+}
