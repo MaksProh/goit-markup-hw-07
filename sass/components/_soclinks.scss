@@ -1,11 +1,11 @@
-.soclinks-list {
+.socials {
   padding: 0;
   margin: 0;
   display: flex;
   justify-content: space-between;
 }
 
-.soclinks-list__icon {
+.socials__icon {
   width: 20px;
   height: 20px;
   fill: var(--color-link);
@@ -13,13 +13,13 @@
   transition: fill 250ms var(--timing-function);
 }
 
-.soclinks-list__item {
+.socials__item {
   width: 44px;
   height: 44px;
   border-radius: 50%;
 }
 
-.soclinks-list__link {
+.socials__link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -37,7 +37,7 @@
   }
 }
 
-.soclinks-list__link:hover .soclinks-list__icon,
-.soclinks-list__link:focus .soclinks-list__icon {
+.socials__link:hover .socials__icon,
+.socials__link:focus .socials__icon {
   fill: currentColor;
 }

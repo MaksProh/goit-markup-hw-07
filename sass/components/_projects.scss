@@ -7,11 +7,11 @@
   margin-top: -30px;
 }
 
-.container-card {
+.project-card {
   position: relative;
 }
 
-.container-photo {
+.project-photo {
   height: 294px;
 }
 
@@ -45,7 +45,7 @@
   padding: 63px 24px;
 }
 
-.project-list__item:hover .project__text {
+.project__item:hover .project__text {
   opacity: 1;
   transform: translateX(0);
 }
@@ -57,7 +57,7 @@
   object-fit: cover;
 }
 
-.project-list__item {
+.project__item {
   width: calc(100% / 3 - 30px);
   margin-left: 30px;
   margin-top: 30px;
@@ -65,13 +65,13 @@
   padding: 0;
 }
 
-.container-desc {
+.project-desc {
   border: 1px solid var(--color-border-portfolio);
   border-top: none;
   padding: 20px 24px;
 }
 
-.project-card__title {
+.project__title {
   display: inline-block;
   font-weight: 700;
   font-size: 18px;
@@ -79,7 +79,7 @@
   margin-bottom: 4px;
 }
 
-.project-card__application {
+.project__application {
   color: var(--grey-text);
   font-weight: 400;
   font-size: 16px;
@@ -88,7 +88,7 @@
   letter-spacing: 0.03em;
 }
 
-.project-list__item:hover {
+.project__item:hover {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }

@@ -1,25 +1,26 @@
-.command {
+.team {
   padding: 94px 0px;
   background-color: var(--background-btn);
 }
 
 .workman-list {
+  display: flex;
   margin: 0;
   padding: 0;
 }
 
-.workman-list__thumb {
+.workman__thumb {
   height: 260px;
 }
 
-.workman-list__img {
+.workman__img {
   display: block;
   max-width: 100%;
   max-height: 100%;
   object-fit: cover;
 }
 
-.workman-date__initials {
+.workman__initials {
   margin-bottom: 10px;
 
   font-weight: 500;
@@ -28,7 +29,7 @@
   color: var(--black-text);
 }
 
-.workman-date__profession {
+.workman__profession {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.19;
@@ -36,14 +37,14 @@
   margin-bottom: 16px;
 }
 
-.workman-list {
+.workman {
   padding: 0;
   display: flex;
   flex-wrap: wrap;
   margin-left: -30px;
 }
 
-.workman-list__item {
+.workman__item {
   width: calc(100% / 4 - 30px);
   margin-left: 30px;
   text-align: center;

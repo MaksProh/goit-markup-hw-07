@@ -1,12 +1,12 @@
-.soclinks-container {
+.socials-container {
   margin-left: 70px;
 }
 
-.soclinks-list__item--footer:not(:last-child) {
+.socials__item--footer:not(:last-child) {
   margin-right: 10px;
 }
 
-.soclinks-container__title,
+.socials-container__title,
 .form-footer__title {
   margin-bottom: 20px;
   font-weight: 700;
@@ -17,10 +17,10 @@
   text-transform: uppercase;
 }
 
-.soclinks-list__icon--footer {
+.socials__icon--footer {
   fill: var(--white-text);
 }
 
-.soclinks-list__link--footer {
+.socials__link--footer {
   background-color: var(--backgrouund-links-footer);
 }
