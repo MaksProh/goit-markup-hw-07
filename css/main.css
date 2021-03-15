@@ -507,7 +507,7 @@ body {
   text-align: center;
 }
 
-.hero__container-title {
+.hero__title {
   display: inline-block;
   margin-bottom: 20px;
   width: 696px;
@@ -515,7 +515,7 @@ body {
   text-transform: uppercase;
 }
 
-.hero__container-button {
+.hero__button {
   display: block;
   margin: 0 auto;
   min-width: 200px;
@@ -535,20 +535,6 @@ body {
 
 .container--advantages {
   padding-top: 94px;
-}
-
-.advantages__title--visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  -webkit-clip-path: inset(100%);
-          clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
 }
 
 .advantages-list {
@@ -583,7 +569,7 @@ body {
       flex-basis: calc(100% / 4 - 30px);
 }
 
-.container-advantages__icon {
+.icon-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -661,7 +647,7 @@ body {
   background-color: var(--background-btn);
 }
 
-.workman-list {
+.team-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -669,11 +655,11 @@ body {
   padding: 0;
 }
 
-.workman__thumb {
+.team__thumb {
   height: 260px;
 }
 
-.workman__img {
+.team__img {
   display: block;
   max-width: 100%;
   max-height: 100%;
@@ -681,7 +667,7 @@ body {
      object-fit: cover;
 }
 
-.workman__initials {
+.team__name {
   margin-bottom: 10px;
   font-weight: 500;
   font-size: 16px;
@@ -689,7 +675,7 @@ body {
   color: var(--black-text);
 }
 
-.workman__profession {
+.team__profession {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.19;
@@ -697,7 +683,7 @@ body {
   margin-bottom: 16px;
 }
 
-.workman {
+.team-list {
   padding: 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -707,7 +693,7 @@ body {
   margin-left: -30px;
 }
 
-.workman__item {
+.team__item {
   width: calc(100% / 4 - 30px);
   margin-left: 30px;
   text-align: center;
@@ -717,7 +703,7 @@ body {
   border-radius: 0px 0px 4px 4px;
 }
 
-.workman-date {
+.team-box {
   padding: 30px 32px;
 }
 
